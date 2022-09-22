@@ -1,0 +1,9 @@
+.sobre {
+    background-color: var(--segundo-background);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.sobre__titulo {
+    text-align: center;
+}

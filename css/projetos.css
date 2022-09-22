@@ -1,0 +1,40 @@
+.projetos {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.projetos__titulo {
+    text-align: center;
+}
+
+.projetos__grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5rem;
+    padding-top: 4rem;
+}
+
+.projetos__card {
+    text-align: center;
+    font-size: 2.2rem;
+    width: 100%;
+    display: inline;
+}
+
+.projetos__card > img {
+    width: 100%;
+    border-radius: 12px;
+    border: 3px solid var(--contorno);
+    box-shadow: 8px 8px 8px 0px rgba(82, 82, 82, 0.8);
+}
+
+figcaption {
+    padding-top: 1rem;
+}
+
+
+@media(min-width: 900px) {
+    .projetos__grade {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}

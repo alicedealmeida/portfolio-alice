@@ -1,0 +1,12 @@
+.contato {
+    text-align: center;
+    background-color: var(--segundo-background);
+}
+
+.contato__redes {
+    padding: 2rem 0 4rem 0;
+}
+
+.contato__icone {
+    font-size: 3rem;
+}

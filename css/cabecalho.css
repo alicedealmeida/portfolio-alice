@@ -1,0 +1,118 @@
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--primeiro-background);
+    width: 100%;
+    box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    color: var(--cor-fonte-destaque);
+    height: fit-content;
+}
+
+.cabecalho__icones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+.cabecalho__navegacao {
+    display: none;
+}
+
+.cabecalho__navegacao--ativado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2rem 0 3rem 0;
+}
+
+.cabecalho__link {
+    list-style-type: none;
+    padding: 1rem;
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid var(--cor-fonte-destaque);
+}
+
+ul {
+    width: 100%;
+}
+
+
+/* mudança do tema */
+
+.switch input[type="checkbox"] {
+    display: none;
+}
+  
+.switch label {
+    font-size: 1rem;
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+    background-color: grey;
+    border: 2px solid grey;
+    box-sizing: content-box;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.switch label:after {
+    position: relative;
+    display: inline-block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    left: 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.3s all ease-in-out;
+}
+
+.switch label:active:after {
+    width: 1.2rem;
+}
+
+.switch input:checked + label {
+    background-color: rgb(41, 76, 255);
+    border: 2px solid rgb(41, 76, 255);
+}
+
+.switch input:checked + label:after {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+@media(min-width: 900px) {
+    .navbar-toggle {
+        display: none;
+    }
+
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+
+    .cabecalho__navegacao, .cabecalho__link {
+        display: inline;
+        border: none;
+    }
+
+    .cabecalho__link {
+        padding: 2rem;
+    }
+
+    ul {
+        display: inline;
+        width: 50%;
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Alice de Almeida</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2dba346295.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link href="css/cabecalho.css" rel="stylesheet">
+        <link href="css/home.css" rel="stylesheet">
+        <link href="css/sobre.css" rel="stylesheet">
+        <link href="css/projetos.css" rel="stylesheet">
+        <link href="css/contato.css" rel="stylesheet">
+        
+    </head>
+    <body class="tema-claro">
+        <header class="cabecalho container">
+            <div class="cabecalho__icones">
+                <div class="switch">
+                    <input id="muda-tema" type="checkbox"/>
+                    <label for="muda-tema"></label>
+                    Tema escuro
+                </div>
+                <span class="navbar-toggle" id="js-navbar">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>           
+            <nav class="cabecalho__navegacao">
+                <ul>
+                    <li class="cabecalho__link"><a href="#home">Home</a></li>
+                    <li class="cabecalho__link"><a href="#sobre">Sobre</a></li>
+                    <li class="cabecalho__link"><a href="#projetos">Projetos</a></li>
+                    <li class="cabecalho__link"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="home container" id="home">
+                <div class="home__img">
+                    <img src="img/foto.jpg" alt="Foto da Alice">
+                </div>
+                <div class="home__texto"> 
+                    <h1 class="home__titulo--animado"></h1>
+                    <p>Sou Alice de Almeida, estudante de Engenharia de 
+                    Software e técnica em Informática. Possuo interesse em trabalhar com
+                    desenvolvimento front-end e/ou back-end. 
+                    </p>
+                </div>         
+            </section>
+
+            <section class="sobre container" id="sobre"> 
+                <h1 class="sobre__titulo">Um pouco sobre mim...</h1>
+                <p>Sou historiadora por formação, e também já atuei como professora de Inglês.
+                Sempre fui interessada em programação de maneira auto-didata, mas desde 2021 
+                comecei a estudar formalmente. 
+                </p>
+                <p>Possuo experiência como estagiária em Tecnologia Educacional e atualmente 
+                estou realizando treinamento full-stack oferecido pela <a target="_blank" href="https://www.wises.com.br/">Wise</a>, em Java e 
+                Angular.  
+                </p>
+                <h2>Habilidades Técnicas</h2>
+                <p><strong>Conhecimento Sólido:</strong> HTML, CSS, lógica de programação.</p>
+                <p><strong>Familiaridade/Aprendendo:</strong> JavaScript, Python, Java, C. </p>     
+            </section>
+            <section class="projetos container" id="projetos"> 
+                <h1 class="projetos__titulo">Projetos</h1>
+                <div class="projetos__grade">
+                    <figure class="projetos__card">
+                        <img src="img/site_lucas.jpg" alt="print website">
+                        <figcaption>Website criado para professor de violão.</figcaption>
+                        <a class="projetos__site" target="_blank" href="https://lucasthomaz.netlify.app/">Website</a> | <a class="projetos__repo" target="_blank" href="https://github.com/alicedealmeida/projeto-final-curso-informatica">Repositório</a>
+                    </figure>
+                    <figure class="projetos__card">
+                        <img src="img/site_pesquisa.jpg" alt="print website">
+                        <figcaption>Formulário de pesquisa sobre ensino à distância.</figcaption>
+                        <a class="projetos__site" target="_blank" href="https://online-education-form.netlify.app/">Website</a> | <a class="projetos__repo" target="_blank" href="https://github.com/alicedealmeida/online-education-form">Repositório</a>
+                    </figure>
+                    <figure class="projetos__card">
+                        <img src="img/site_docs.jpg" alt="print website">
+                        <figcaption>Mockup de site de documentação de software.</figcaption>
+                        <a class="projetos__site" target="_blank" href="https://docs-page-mockup.netlify.app/">Website</a> | <a class="projetos__repo" target="_blank" href="https://github.com/alicedealmeida/docs-page-mockup">Repositório</a>
+                    </figure>
+                    <figure class="projetos__card">
+                        <img src="img/site_cafeteria.jpg" alt="print website">
+                        <figcaption>Mockup de landing page para uma cafeteria.</figcaption>
+                        <a class="projetos__site" target="_blank" href="https://coffy-cafe.netlify.app/">Website</a> | <a class="projetos__repo" target="_blank" href="https://github.com/alicedealmeida/coffy-cafe">Repositório</a>
+                    </figure>       
+                </div> 
+            </section>
+            <section class="contato container" id="contato"> 
+                <h1 class="contato__titulo">Contato</h1>
+                <p>Possui alguma pergunta ou interesse em trabalhar comigo em algum projeto?</p>
+                <p>Entre em contato quando quiser! :)</p>
+                <a href="mailto: alicedealmeida379@gmail.com">alicedealmeida379@gmail.com</a>
+                <div class="contato__redes">
+                    <a target="_blank" href="https://www.linkedin.com/in/alice-de-almeida/"><span class="contato__icone"><i class="fa-brands fa-linkedin"></i></span> 
+                    LinkedIn | </a>
+
+                    <a target="_blank" href="https://github.com/alicedealmeida"><span class="contato__icone"><i class="fa-brands fa-github"></i></span>
+                    GitHub | </a>
+
+                    <a target="_blank" href="https://wa.me/5541997179053"><span class="contato__icone"><i class="fa-brands fa-square-whatsapp"></i></span>
+                    WhatsApp</a>
+                </div>               
+            </section>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>
